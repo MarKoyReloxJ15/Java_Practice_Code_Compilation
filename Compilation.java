@@ -59,7 +59,7 @@ public class Compilation {
 	}
 	
 	public void thirdTask() {// # 5
-		//Note no backspace option here in eclipse it does not recognize
+		
 				//System.out.println(Math.pow(a,3));
 				
 				Scanner scan = new Scanner(System.in);

@@ -27,7 +27,7 @@ public class Main {
 				
 			}
 			for(int j=0;j<num;j++) {
-				if((bc%2) == 0) {
+				if((bc%2) == 2) {
 					System.out.print(" ");	
 				}else {
 					System.out.print(a+" ");
@@ -50,7 +50,7 @@ public class Main {
 		Compilation compl = new Compilation();
 		
 		man.myfunction();
-		//compl.firsDayTask();
+		//compl.fifteenTask();
 		
 	}
 }
