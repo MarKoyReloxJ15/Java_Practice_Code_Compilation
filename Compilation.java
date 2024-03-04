@@ -2,6 +2,9 @@
 
 import java.util.Scanner;
 
+//Note for those who watch or for the future me. This no make sense especially the naming of variables and no AI is involve therefore code might not efficient enough to incorporate it in bigger projects.
+//This is only a practice to enhance coding ability and a little past time as it is probably made by the author without internet connection
+//And reminder code might not be aesthetic as it looks in the command but its working.
 public class Compilation {
 	
 	public void firsDayTask() {//#2
@@ -322,7 +325,7 @@ int bilang = 20;
 	}
 	
 	
-	public void fourtenTask() {
+	public void fourtenTask() {// #19 display the n terms of a harmonic series and their sum
 		
 		int n = 5;
 		
@@ -330,8 +333,9 @@ int bilang = 20;
 		Double m=0d;
 		for(int i=0;i<n;i++) {
 			m++;
+			
 			sum = sum + (1/m) ;
-			System.out.print(sum + " ");
+			System.out.print("1/" + m + " + ");
 			
 			
 		}
@@ -339,7 +343,7 @@ int bilang = 20;
 		
 	}
 	
-	public void fifteenTask() {
+	public void fifteenTask() {//# pyramid pattern using asterisks, with each row containing an odd number of asterisks
 		int bilang = 20;
 				
 				int num = 0;
