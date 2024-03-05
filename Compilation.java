@@ -154,11 +154,9 @@ public class Compilation {
 							
 						}
 						for(int j=0;j<num;j++) {
-							System.out.print(a);				
+							System.out.print(a + " ");				
 						}
-						for(int l=0;l<num3-1;l++) {
-							System.out.print(a);				
-						}
+						
 						
 						
 						
@@ -412,6 +410,74 @@ int bilang = 20;
 				
 				System.out.println("\n = " + sum);
 	}
-	
+
+	public void seventenTasks(){//#22 Floyd's Triangle.
+				int bilang = 10;
+				
+				int num = 0;
+				
+				int a= 1;
+				for(int i=0;i<bilang;i++) {
+					num++;
+					int displ = 0;
+					for(int j=0;j<num;j++) {
+						displ = a % 2;
+						System.out.print(displ);	
+						a++;
+						
+					}
+					
+					System.out.println();
+					
+				}
+	}
+
+	public void eigthteenTasks(){//#25 display the square of natural numbers and their sum
+		int n = 5;
+		int m = 0;
+		int square = 0;
+		int sum = 0;
+		String cross = "";
+		for(int i=0; i<n; i++){
+			m++;
+			square = m * m;
+			cross = (i==n-1) ? " \n" : " + ";
+			System.out.print(square + cross);
+			sum += square;
+		}
+		System.out.println(sum);
+	}
+
+	public void nineteenTasks(){//#26 sum of the series[1 + 11 + 111 + 1111.....]
+		int n;
+				Scanner scan = new Scanner(System.in);
+				do{System.out.print("Enter n terms: ");
+					n = scan.nextInt();
+
+			}while(n>9);
+				
+				int num = 0;
+				int sum = 0;
+				String nine = "1";
+				
+				int nineInt = 0;
+				for(int i=0;i<n;i++){
+					num++;
+					String con="";
+					String cros = " + ";
+					for(int j=0;j<num;j++){	
+						con += nine;
+						
+					}
+					cros = (i == n-1) ? " " : " + ";
+					
+					System.out.print(con + cros);
+					nineInt = Integer.parseInt(con);
+					//System.out.println();
+					sum += nineInt;
+				}
+				
+				System.out.println("\n = " + sum);
+	}
 	
 }

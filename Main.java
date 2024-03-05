@@ -5,24 +5,37 @@ import java.util.*;
 public class Main {
 	
 	public void myfunction() {
-		int bilang = 14;
-		
-		int num = 0;
-		int num2= 0;
-		int a= 1;
-		for(int i=0;i<bilang;i++) {
-			
-			
-			num++;
-			
-			for(int j=0;j<num;j++) {
-				System.out.print(a);
-				a++;
-			}
-			
-			System.out.println();
-			
-		}
+		int n;
+				Scanner scan = new Scanner(System.in);
+				do{System.out.print("Enter n terms: ");
+					n = scan.nextInt();
+
+			}while(n>9);
+				
+				int num = 0;
+				int sum = 0;
+				String nine = "1";
+				
+				int nineInt = 0;
+				for(int i=0;i<n;i++){
+					num++;
+					String con="";
+					String cros = " + ";
+					for(int j=0;j<num;j++){	
+						con += nine;
+						
+					}
+					cros = (i == n-1) ? " " : " + ";
+					
+					System.out.print(con + cros);
+					nineInt = Integer.parseInt(con);
+					//System.out.println();
+					sum += nineInt;
+				}
+				
+				System.out.println("\n = " + sum);
+
+
 	}
 	
 	
@@ -32,7 +45,7 @@ public class Main {
 		Compilation compl = new Compilation();
 		
 		man.myfunction();
-		// compl.eightTask();
+		// compl.triangleSideTask();
 		
 	}
 }
