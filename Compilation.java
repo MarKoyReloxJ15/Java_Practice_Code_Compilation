@@ -378,6 +378,40 @@ int bilang = 20;
 				}		
 	}
 	
+	public void sixtTeenTasks(){//#21 display the sum of the series[9 + 99 + 999 + 9999......]
+				int n;
+				Scanner scan = new Scanner(System.in);
+				do{System.out.print("Enter n terms: ");
+					n = scan.nextInt();
+
+			}while(n>9);
+				
+				int num = 0;
+				int sum = 0;
+				String nine = "9";
+				
+				int nineInt = 0;
+				for(int i=0;i<n;i++){
+					num++;
+					String con="";
+					String cros = " + ";
+					for(int j=0;j<num;j++){	
+						con += nine;
+						
+					}
+					if(i == n-1){
+						cros = "";
+					}else{
+						cros = " + ";
+					}
+					System.out.print(con + cros);
+					nineInt = Integer.parseInt(con);
+					//System.out.println();
+					sum += nineInt;
+				}
+				
+				System.out.println("\n = " + sum);
+	}
 	
 	
 }
