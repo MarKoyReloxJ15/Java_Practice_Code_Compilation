@@ -479,5 +479,64 @@ int bilang = 20;
 				
 				System.out.println("\n = " + sum);
 	}
+
+	public void twentiethTasks(){//#27 program that check if perfect number or not
+				int n = 6;
+				int div = 0;
+				int m =0;
+				int sum = 0;
+				for(int i=0; i<n;i++){
+					
+					m++;
+					if(m == n){
+						break;
+					}
+					div = n%m;
+					if(div != 0 || div == n){
+						sum += 0;
+					}else{
+						sum += m;
+						System.out.print(m + " ");
+					}
+				}
+
+				System.out.println("\n" +sum);
+				String res = (sum == n) ? "A perfect number." : "Not a perfect number.";
+				System.out.println(res);
+	}
 	
+
+	public void twentytwoTasks(){//#28 program that find the perfect numbers within the givin ranges
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the number to find the perfect number: ");
+		int n = scan.nextInt();
+				int div = 0;
+				int m =0;
+				int sum = 0;
+				int k=0;
+				for(int j=0;j<n;j++){
+					k++;
+					sum = 0;
+					m = 0;
+					for(int i=0; i<k;i++){						
+						m++;
+						if(m == k){
+							break;
+						}
+						div = k%m;
+						if(div == 0){
+							sum += m ;
+						}else{
+							sum += 0;
+						}
+					}
+		
+				boolean res = (sum == k) ? true:false;				
+				if(res){
+					System.out.println(k );
+				}			
+			}
+
+	}
+
 }
